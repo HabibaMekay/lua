@@ -1,7 +1,13 @@
 agent:
   agentId: baseAgent_agent_1788189884402_nbvubx4sk
   orgId: f0b3c994-af48-4cdf-a68c-3dc242a44b3e
-skills: []
+skills:
+  - name: leave-management
+    skillId: 465ac418-6052-4593-b1cf-686092499a24
+    version: 1.0.0
+  - name: sop-requests
+    skillId: 210889fa-fa6c-49fe-9957-20ab387d6209
+    version: 1.0.0
 webhooks: []
 jobs: []
 preprocessors: []
