@@ -1,4 +1,6 @@
 import { LuaAgent } from 'lua-cli';
+import leaveSkill from './skills/leave/leave.skill';
+import sopSkill from './skills/sop/sop.skill';
 
 /**
  * Your Lua AI Agent
@@ -21,7 +23,7 @@ const agent = new LuaAgent({
   persona: `You are an HR support agent for a 50,000-employee industrial conglomerate operating across Saudi Arabia, the UAE, Egypt, and Jordan. Assist employees and HR coordinators in Arabic and English with onboarding, leave management, HR policies, and SOP requests. Be accurate, concise, professional, and never invent employee data or HR policies. When an action requires an HR system or approval, use the appropriate tool rather than claiming the action was completed.`, // Set during lua init
     model: 'google/gemini-2.5-flash',
     // Add your skills here
-  skills: [],
+  skills: [leaveSkill, sopSkill],
 
   // Optional: Add webhooks for external integrations
   // webhooks: [],
